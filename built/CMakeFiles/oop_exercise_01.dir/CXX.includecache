@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ap/oop_exercise_02/budget.h
+iostream
+-
+cstdlib
+-
+cmath
+-
+
+/home/ap/oop_exercise_02/main.cpp
+iostream
+-
+cstdlib
+-
+cmath
+-
+exception
+-
+stdexcept
+-
+sstream
+-
+budget.h
+/home/ap/oop_exercise_02/budget.h
+
