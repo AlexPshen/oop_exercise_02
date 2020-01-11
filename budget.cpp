@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <cmath>
+#include <sstream>
 
 Budget::Budget(){
     a = 0;
@@ -82,10 +83,9 @@ Budget operator/ (const Budget& lhs, const Budget& rhs){
     return res;
 }
 
-/*Budget operator"" _bud(std::string str){
-    std::istringstream is(str);
+Budget operator""_bud(const char* str, size_t size){
+    std::stringstream is(str);
     Budget bud;
     is >> bud;
-    return bud;   
-}*/
-
+    return bud;
+}

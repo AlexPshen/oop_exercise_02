@@ -33,5 +33,6 @@ public:
     }
 };
 
+Budget operator""_bud(const char* str, size_t size);
 
 #endif

@@ -7,15 +7,6 @@
 
 #include "budget.h"
 
-Budget operator""_bud(const char* str, size_t size){
-    std::stringstream is(str);
-    Budget bud;
-    is >> bud;
-    return bud;
-}
-
-
-
 int main(){
     Budget my_bud{};
     std::cin >> my_bud;
